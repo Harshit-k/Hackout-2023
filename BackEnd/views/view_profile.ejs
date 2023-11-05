@@ -1,0 +1,185 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button 
+    {
+        background-color: rgb(13, 110, 253);
+        color: white;
+        border: none;
+        height: 30px;
+        width: 60px;
+        cursor: pointer;
+        border-radius: 5px;
+
+    }
+</style>
+<style>
+    h1
+    {
+        font-family:Arial, Helvetica, sans-serif;
+
+    }
+</style>
+<style>
+    h3
+    {
+        font-family:Arial, Helvetica, sans-serif;
+
+    }
+</style>
+<style>
+    label
+    {
+        font-family:Arial, Helvetica, sans-serif;
+
+    }
+    div
+    {
+        padding: 6px;
+    }
+    /*div.box
+    {
+        background-color: rgb(176, 176, 176);
+    }*/
+    fieldset
+    {
+        background-color: gainsboro;
+        border-radius: 5px;
+    }
+
+</style>
+<form action="/view_profile" method="POST">
+    <div class="main-block">
+        <form action="/">
+            <h1>Provide Your Medical Information</h1>
+            
+            <fieldset>
+            <legend>
+                <h3>Personal Information</h3>
+            </legend>
+                <div class="box">
+                    
+                <div class="personal-info">
+                    <div>
+                        <div class="div"><label>First Name*: Aarush</label></div>
+                        <div class="div"><label>Last Name*: Bayyana</label></div>
+                        <div><label>Date of Birth*: 2003-12-25</label></div>
+                        <div><label>Gender*: Male</label></div>
+                        <div><label>Contact Information (Phone): </label></div>
+                        <div><label>Contact Information (Email): </label></div>
+                        <div><label>Address (Street): </label></div>
+                        <div><label>Address (City): </label></div>
+                        <div><label>Address (State): </label></div>
+                        <div><label>Address (Zip Code): </label></div>
+                    </div>
+                </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Emergency Contact</h3>
+                </legend>
+                <div class="emergency-contact">
+                    <div>
+                        <div><label>Name: </label></div>
+                        <div><label>Relationship: </label></div>
+                        <div><label>Phone Number: </label></div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Primary Care Physician</h3>
+                </legend>
+                <div class="physician-info">
+                    <div>
+                        <div><label>Name*: </label></div>
+                        <div><label>Contact Information: </label></div>
+                        <div><label>Clinic/Hospital: </label></div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Medical History</h3>
+                </legend>
+                <div class="medical-history">
+                    <div>
+                        <div><label>Allergies: Milk, Peanuts</label></div>
+                        <div><label>Chronic Conditions: Diabetes</label></div>
+                        <div><label>Past Surgeries: Neck Fracture</label></div>
+                        <div><label>Medications: </label></div>
+                        <div><label>Vaccines: </label></div>
+                        <div><label>Family Medical History: </label></div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Vital Signs</h3>
+                </legend>
+                <div class="vital-signs">
+                    <div>
+                        <div><label>Height(cm): </label></div>
+                        <div><label>Weight(kg): </label></div>
+                        <div><label>Blood Pressure: </label></div>
+                        <div><label>Heart Rate: </label></div>
+                        <div><label>Respiratory Rate: </label></div>
+                        <div><label>Body Temperature: </label></div>
+                        <div><label>Blood Group*: </label></div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Health Insurance</h3>
+                </legend>
+                <div class="health-insurance">
+                    <div>
+                        <div><label>Insurance Provider: </label></div>
+                        <div><label>Policy Number: </label></div>
+                        <div><label>Emergency Contact Number: </label></div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Diet & Lifestyle</h3>
+                </legend>
+                <div class="diet-lifestyle">
+                    <div>
+                        <div><label>Dietary Preferences/Restrictions: </label></div>
+                        <div><label>Exercise Habits: </label></div>
+                        <div><label>Alcohol & Tobacco Use: </label></div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Medical Documents</h3>
+                </legend>
+                <div class="medical-documents">
+                    <div>
+                        <div><label>Upload Medical Documents(PDF): </label></div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Additional Notes</h3>
+                </legend>
+                <div class="additional-notes">
+                    <div>
+                        <div><label>Additional Information or Notes: </label></div>
+                    </div>
+                </div>
+            </fieldset>
+            <hr class="my-4">
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Back</button>
+        </form>
+    </div>
+</form>

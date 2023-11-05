@@ -1,0 +1,218 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button 
+    {
+        background-color: rgb(13, 110, 253);
+        color: white;
+        border: none;
+        height: 30px;
+        width: 60px;
+        cursor: pointer;
+        border-radius: 5px;
+
+    }
+</style>
+<style>
+    h1
+    {
+        font-family:Arial, Helvetica, sans-serif;
+
+    }
+</style>
+<style>
+    h3
+    {
+        font-family:Arial, Helvetica, sans-serif;
+
+    }
+</style>
+<style>
+    label
+    {
+        font-family:Arial, Helvetica, sans-serif;
+
+    }
+    div
+    {
+        padding: 6px;
+    }
+    /*div.box
+    {
+        background-color: rgb(176, 176, 176);
+    }*/
+    fieldset
+    {
+        background-color: gainsboro;
+        border-radius: 5px;
+    }
+
+</style>
+<form action="/profile" method="POST">
+    <div class="main-block">
+        <form action="/">
+            <h1>Provide Your Medical Information</h1>
+            
+            <fieldset>
+            <legend>
+                <h3>Personal Information</h3>
+            </legend>
+                <div class="box">
+                    
+                <div class="personal-info">
+                    <div>
+                        <div class="div"><label>First Name*: </label><input type="text" id="firstname" name="firstname" required></div>
+                        <div class="div"><label>Last Name*: </label><input type="text" id="lastname" name="lastname" required></div>
+                        <div><label>Date of Birth*: </label><input type="date" id="dob" name="dob" required></div>
+                        <div><label>Gender*: </label>
+                            <select name="gender">
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div><label>Contact Information (Phone): </label><input type="tel" name="phone"></div>
+                        <div><label>Contact Information (Email): </label><input type="email" name="email"></div>
+                        <div><label>Address (Street): </label><input type="text" name="street"></div>
+                        <div><label>Address (City): </label><input type="text" name="city"></div>
+                        <div><label>Address (State): </label><input type="text" name="state"></div>
+                        <div><label>Address (Zip Code): </label><input type="text" name="zip_code"></div>
+                    </div>
+                </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Emergency Contact</h3>
+                </legend>
+                <div class="emergency-contact">
+                    <div>
+                        <div><label>Name*: </label><input type="text" name="emergency_name"></div>
+                        <div><label>Relationship*: </label><input type="text" name="emergency_relationship"></div>
+                        <div><label>Phone Number*: </label><input type="tel" name="emergency_phone"></div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Primary Care Physician</h3>
+                </legend>
+                <div class="physician-info">
+                    <div>
+                        <div><label>Name*: </label><input type="text" name="physician_name"></div>
+                        <div><label>Contact Information: </label><input type="text" name="physician_contact"></div>
+                        <div><label>Clinic/Hospital: </label><input type="text" name="physician_clinic"></div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Medical History</h3>
+                </legend>
+                <div class="medical-history">
+                    <div>
+                        <div><label>Allergies: </label><input type="text" id="allergies" name="allergies"></div>
+                        <div><label>Chronic Conditions: </label><input type="text" id="chronic_conditions" name="chronic_conditions"></div>
+                        <div><label>Past Surgeries: </label><input type="text" name="previous_surgeries"></div>
+                        <div><label>Medications: </label><input type="text" id="medications" name="medications"></div>
+                        <div><label>Vaccines: </label><input type="text" name="vaccines"></div>
+                        <div><label>Family Medical History: </label><input type="text" name="family_medical_history"></div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Vital Signs</h3>
+                </legend>
+                <div class="vital-signs">
+                    <div>
+                        <div><label>Height(cm): </label><input type="text" name="height"></div>
+                        <div><label>Weight(kg): </label><input type="text" name="weight"></div>
+                        <div><label>Blood Pressure: </label><input type="text" name="blood_pressure"></div>
+                        <div><label>Heart Rate: </label><input type="text" name="heart_rate"></div>
+                        <div><label>Respiratory Rate: </label><input type="text" name="respiratory_rate"></div>
+                        <div><label>Body Temperature: </label><input type="text" name="body_temperature"></div>
+                        <div><label>Blood Group*: </label>
+                            <select name="blood_group">
+                                <option value=""></option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Health Insurance</h3>
+                </legend>
+                <div class="health-insurance">
+                    <div>
+                        <div><label>Insurance Provider: </label><input type="text" name="insurance_provider"></div>
+                        <div><label>Policy Number: </label><input type="text" name="policy_number"></div>
+                        <div><label>Emergency Contact Number: </label><input type="tel" name="emergency_contact_number"></div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Diet & Lifestyle</h3>
+                </legend>
+                <div class="diet-lifestyle">
+                    <div>
+                        <div><label>Dietary Preferences/Restrictions: </label><input type="text" name="diet_preferences"></div>
+                        <div><label>Exercise Habits: </label><input type="text" name="exercise_habits"></div>
+                        <div><label>Alcohol & Tobacco Use: </label><input type="text" name="alcohol_tobacco_use"></div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Medical Documents</h3>
+                </legend>
+                <div class="medical-documents">
+                    <div>
+                        <div><label>Upload Medical Documents(PDF): </label><input type="file" accept=".pdf" name="medical_documents"></div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Additional Notes</h3>
+                </legend>
+                <div class="additional-notes">
+                    <div>
+                        <div><label>Additional Information or Notes: </label><textarea name="additional_notes" rows="4"></textarea></div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    <h3>Terms and Mailing</h3>
+                </legend>
+                <div class="terms-mailing">
+                    <div class="checkbox">
+                        <input type="checkbox" name="privacy_policy">
+                        <span>I accept the <a href="https://www.example.com/privacy-policy">Privacy Policy for Example.com.</a></span>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="personalized_offers">
+                        <span>I want to receive personalized offers from your site</span>
+                    </div>
+                </div>
+            </fieldset>
+            <hr class="my-4">
+            <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+        </form>
+    </div>
+</form>
